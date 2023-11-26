@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    /* color: white; */
+}
+
+body{
+    background: #333;
+}
+
+.to-do-card{
+    margin: 100px auto 0;
+    max-width: 470px;
+    /* text-align: center; */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    padding: 20px 35px;
+}
+
+.to-do-card h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    
+    
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    cursor:pointer;
+    color: #333;
+    background: #00feba;
+    border-radius: 40px;
+    
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 0px 10px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height:16px;
+    width: 16px;
+    background-image: url(images/radio-button.png);
+    background-size:cover ;
+    background-position: center;
+    /* top: 12px; */
+    left: 9px;
+}
+
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
+
